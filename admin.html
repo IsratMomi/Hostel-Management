@@ -1,0 +1,37 @@
+<?php
+	session_start();
+	if(!isset($_SESSION['name'])){
+		header('location:login.php');
+	}
+?>
+
+<html>
+<head>
+	<title>
+		Admin
+	</title>
+	<link rel="stylesheet" type="text/css" href = "admin.css">
+	
+</head>
+<body>
+	<div class="wrapper">
+		<div class="sidebar">
+			<h2>Sidebar</h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="reg.html">Registration</a></li>
+				<li><a href="Search.html">Search</a></li>
+				<li><a href="#">Food menu</a></li>
+				<li><a href="logout.php">Log out</a></li>
+			</ul>
+		</div>
+		<div class="main_content">
+			<div class="header"> Welcome Admin....</div>
+			<div class="info">
+			<div>This our Admin panel. We are often here to serve you.. Thank You for visiting...!!!</div>
+			</div>
+		</div>
+	</div>
+				
+</body>
+</html>

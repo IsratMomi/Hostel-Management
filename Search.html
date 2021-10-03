@@ -1,0 +1,43 @@
+
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+	<title> Search</title>
+		<!--<link rel = "stylesheet" type="text/css" href ="reg.css">-->
+		
+</head>
+<body>
+	<button id="add_show" onclick="$('#add_data').slideDown();">Add New Data</button>
+	<div id="add_data">
+	<h1> Registration Form </h1>
+	<div class="reg">
+	
+		<h2> Register Here</h2>
+		<label>Student name:</label><br>
+	    <input type="text" name="stu_name" id="name" placeholder="Enter name"/><br><br>
+		<label>Father name:</label><br>
+		<input type="text" name="fa_name" id="f_name" placeholder="Enter father's name"/><br><br>
+		<label>Mother name:</label><br>
+		<input type="text" name="mo_name" id="m_name" placeholder="Enter mother's name"/><br><br>
+		<label>Contact:</label><br>
+		<input type="text" name="con" id="cont" placeholder="Enter contact no"/><br><br>
+		<label>Institute name:</label><br>
+		<input type="text" name="inst_name" id="inst" placeholder="Enter institute name"/><br><br>
+		<label>Room no:</label><br>
+		<input type ="text" name="room_no" id="room" placeholder="Enter room no"/><br><br>
+		<label>Password:</label><br>
+		<input type="password" name="pass" id="pass" placeholder="Enter Password"/><br><br>
+		<input type="button" id="addData" name="addData" value="Submit">
+	    
+		<input type="button" onclick="$('#add_data').slideUp();" value="Cancel">
+	</div>
+	</div>
+		<div id="edit_data"></div></br>
+	<div id="show_data"></div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+</body>
+</html>
+
